@@ -1,0 +1,12 @@
+llama.cpp/
+models/
+.vscode/
+!.vscode/*.template.json
+!.vscode/extensions.json
+__pycache__/
+dist/
+.venv/
+.ruff_cache/
+
+og-dispatcher
+

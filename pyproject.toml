@@ -1,0 +1,43 @@
+[project]
+name = "llm-gateway"
+version = "0.1.0"
+description = "A gateway to LLMs"
+authors = [
+    { name = "syne-lab", email = "noreply@example.com" }
+]
+dependencies = [
+    "fire>=0.6.0",
+    "sentencepiece>=0.2.0",
+    "gguf>=0.6.0",
+    "tiktoken>=0.6.0",
+    "transformers>=4.40.1",
+    "openai>=1.23.6",
+    "fastapi[all]>=0.110.2",
+    "requests>=2.31.0",
+    "uvicorn[standard]>=0.29.0",
+    "llama-cpp-python==0.2.69",
+    "protobuf>=5.26.1",
+    "pydantic>=2.7.1",
+    "anthropic>=0.25.7",
+    "torch==2.3.0+cu118",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[[tool.rye.sources]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu118"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llm_gateway"]
