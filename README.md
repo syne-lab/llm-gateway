@@ -26,19 +26,19 @@ response = client.chat.completions.create(
 ### Pip
 
 ```sh
-pip install 'llm-gateway @ git+https://gitlab.com/syne-lab/llm-gateway'
+pip install 'llm-gateway @ git+https://github.com/syne-lab/llm-gateway'
 ```
 
 ### Poetry
 
 ```sh
-poetry add 'git+https://gitlab.com/syne-lab/llm-gateway'
+poetry add 'git+https://github.com/syne-lab/llm-gateway'
 ```
 
 ### uv
 
 ```sh
-uv add llm-gateway --git https://gitlab.com/syne-lab/llm-gateway
+uv add llm-gateway --git https://github.com/syne-lab/llm-gateway
 ```
 
 ### Set the auth tokens
